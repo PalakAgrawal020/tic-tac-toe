@@ -4,7 +4,9 @@
     box-sizing: border-box;
 }
 
+
 .board {
+    padding: 30px;
     display: grid;
     grid-template-columns: repeat(3, 100px)
 }
@@ -18,4 +20,18 @@
     font-size: 24px; 
     border: 1px solid gray;
     cursor: pointer;
+}
+
+button {
+    background-color: rgb(53, 53, 226);
+    border: none;
+    color: white;
+    width: 100px;
+    height: 40px;
+    border-radius: 5px;
+    margin-top: 20px; /* Add margin to separate the button from the board */
+}
+
+.btn {
+    padding-left: 30px;
 }

@@ -84,3 +84,15 @@ function showWinner(currentPlayer) {
 function showTie() {
     alert("It's a tie!");
 }
+
+
+const restart = document.querySelector('button');
+restart.addEventListener('click', () => {
+    gameEnd = false;
+
+    boardArray.fill("");
+    const cells = document.querySelectorAll('.cell');
+    cells.forEach(cell => {
+        cell.textContent = "";
+    });
+});
