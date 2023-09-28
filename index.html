@@ -9,8 +9,23 @@
 </head>
 <body>
     <div class="container">
-    <div class="board"></div>
-    <div class="btn"><button><h3>Restart</h3></button></div>
+        <div class="form-div">
+            <form action="">
+                <div class="player">
+                    <div class="input-group">
+                        <label for="name1"><h3>Enter Player 1 name:</h3></label>
+                        <input type="text" id="name1">
+                    </div>
+                    <div class="input-group">
+                        <label for="name2"><h3>Enter Player 2 name:</h3></label>
+                        <input type="text" id="name2">
+                    </div>
+                </div>
+                <div class="btn" id="strt-btn"><button class="start-btn" type="submit"><h3>Start</h3></button></div> 
+            </form>
+        </div>   
+        <div class="board"></div>
+        <div class="btn"><button class="restart-btn"><h3>Restart</h3></button></div>
     </div>
 </body>
 <script src="script.js"></script>

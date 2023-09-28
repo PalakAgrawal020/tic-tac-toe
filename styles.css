@@ -2,16 +2,70 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
+body {
+    height: 100vh;
+    background-color: aliceblue;
+}
+
+.container {
+    padding-top: 5%;
+    padding-bottom: 5%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 1px solid #ccc; 
+    border-radius: 10px; 
+    background-color: #E5CFF7; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    max-width: 700px; 
+    margin-left: 30%;
+    margin-top: 3%;
+}
+
+.form-div {
+    margin-bottom: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.player {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+label {
+    color: #5B0888;
+}
+
+.input-group {
+    margin-right: 60px; 
+    margin-left: 60px;
+}
+
+input {
+    height: 30px;
+    background-color: aliceblue;
+    border-style: none;
+    border: 1px solid gray;
+    border-radius: 5px;
+    width: 200px; 
+    padding: 10px;
+    font-size: medium;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
 
 .board {
-    padding: 30px;
     display: grid;
     grid-template-columns: repeat(3, 100px)
 }
 
 .cell {
+    background-color: aliceblue;
     width: 100px; 
     height: 100px; 
     display: flex;
@@ -22,16 +76,21 @@
     cursor: pointer;
 }
 
+
 button {
-    background-color: rgb(53, 53, 226);
+    background-color: #713ABE;
     border: none;
     color: white;
     width: 100px;
     height: 40px;
     border-radius: 5px;
-    margin-top: 20px; /* Add margin to separate the button from the board */
+    margin-top: 20px; 
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
 }
 
-.btn {
-    padding-left: 30px;
+#strt-btn {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
